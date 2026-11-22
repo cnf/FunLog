@@ -1,0 +1,8 @@
+dependencies:
+  cmake_utilities: '*'
+  idf: '>=5.4'
+description: Fun Logging
+documentation: https://github.com/cnf/FunLog
+issues: https://github.com/cnf/FunLog/issues
+repository: https://github.com/cnf/FunLog.git
+version: 0.1.0

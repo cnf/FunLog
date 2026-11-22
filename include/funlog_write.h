@@ -10,9 +10,9 @@ net_fun_log_t funlog_set_net_fun_log(net_fun_log_t func);
 
 int net_fun_log(int level, const char *tag, const char *fmt, va_list args);
 
-void net_fun_log_writev(int level, const char *tag, const char *fmt, va_list args);
+void net_fun_log_writev(int level, const char *tag, const char *fmt, va_list args) __attribute__((format(printf, 3, 0)));
 
-void net_fun_log_write(int level, const char *tag, const char *fmt, ...);
+void net_fun_log_write(int level, const char *tag, const char *fmt, ...) __attribute__((format(printf, 3, 4)));
 
 #ifdef __cplusplus
 }
